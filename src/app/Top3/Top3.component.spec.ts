@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PerfByShiftComponent } from './perf-by-shift.component';
+import { Top3Component } from './Top3.component';
 
-describe('PerfByShiftComponent', () => {
-  let component: PerfByShiftComponent;
-  let fixture: ComponentFixture<PerfByShiftComponent>;
+describe('SalesByCategoryComponent', () => {
+  let component: Top3Component;
+  let fixture: ComponentFixture<Top3Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PerfByShiftComponent]
+      imports: [Top3Component]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PerfByShiftComponent);
+    fixture = TestBed.createComponent(Top3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

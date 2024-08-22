@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SalesbymonthComponent } from './salesbymonth.component';
+import { DataTimeComponent } from './data-time.component';
 
-describe('SalesbymonthComponent', () => {
-  let component: SalesbymonthComponent;
-  let fixture: ComponentFixture<SalesbymonthComponent>;
+describe('DataTimeComponent', () => {
+  let component: DataTimeComponent;
+  let fixture: ComponentFixture<DataTimeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SalesbymonthComponent]
+      imports: [DataTimeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SalesbymonthComponent);
+    fixture = TestBed.createComponent(DataTimeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

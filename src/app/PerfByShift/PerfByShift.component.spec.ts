@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TopThreePerfComponent } from './top-three-perf.component';
+import { SalesbymonthComponent } from './PerfByShift.component';
 
-describe('TopThreePerfComponent', () => {
-  let component: TopThreePerfComponent;
-  let fixture: ComponentFixture<TopThreePerfComponent>;
+describe('SalesbymonthComponent', () => {
+  let component: SalesbymonthComponent;
+  let fixture: ComponentFixture<SalesbymonthComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TopThreePerfComponent]
+      imports: [SalesbymonthComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TopThreePerfComponent);
+    fixture = TestBed.createComponent(SalesbymonthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

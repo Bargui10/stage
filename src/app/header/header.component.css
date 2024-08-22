@@ -1,31 +1,40 @@
-.header {
-    height: 70px;
-    padding: 20px 50px;
-    background-color: rgb(1, 38, 69);
-    color: #fff;
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); /* Réduit l'opacité du fond pour plus de contraste */
+    background-image: url(Fond_d_ecran_Sagemcom_1920x1080_2020-1\ \(1\).jpg);
+    background-size: cover; /* Assure que l'image couvre tout l'en-tête */
+    background-position: top center; /* Aligne l'image au sommet de l'en-tête */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image de fond pour un effet de défilement parallax */
+    height: 60px; /* Ajuste la hauteur de l'en-tête pour ne montrer que la partie supérieure de l'image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
-    box-shadow: 5px 5px 5px #939393;
-    .logo img {
-        width: 100%;  /* Pour que l'image remplisse toute la largeur du div */
-        height: auto; /* Pour maintenir le ratio d'aspect de l'image */
-      }
-      
-    .user {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      .user-image {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        background-color: rgb(11, 107, 185);
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-      }
-    }
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden; /* Assure que tout dépassement est caché */
   }
+  
+  .header-content {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 50%;
+  }
+  
+  .header-image {
+    position: absolute; /* Positionne l'image au-dessus */
+    top: 1px; /* Ajuste la position selon vos besoins */
+    left: 5px; /* Ajuste la position selon vos besoins */
+    width: auto; /* Ajuste la largeur de l'image selon vos besoins */
+    height: 50px; /* Ajuste la hauteur de l'image selon vos besoins */
+    z-index: 110; /* Assure que l'image est au-dessus du fond */
+  }
+  
+
+  

@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
 import { TopWidgetsComponent } from '../top-widgets/top-widgets.component';
-import { SalesByCategoryComponent } from '../sales-by-category/sales-by-category.component';
-import { TopThreePerfComponent } from '../top-three-perf/top-three-perf.component';
-import { PerfByShiftComponent } from '../perf-by-shift/perf-by-shift.component';
-import { SalesbymonthComponent } from '../salesbymonth/salesbymonth.component';
-import { LastfewcomponentComponent } from '../lastfewcomponent/lastfewcomponent.component';
+import { DataTimeComponent } from '../data-time/data-time.component';
+import { Top3Component } from '../Top3/Top3.component';
+import { PerfByShiftComponent } from '../PerfByShift/PerfByShift.component';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports:[
+  imports: [
     TopWidgetsComponent,
-    SalesByCategoryComponent,
-    TopThreePerfComponent,
+    Top3Component,
     PerfByShiftComponent,
-    SalesbymonthComponent,
-    LastfewcomponentComponent
-   ],
+    DataTimeComponent,
+    HeaderComponent
+],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

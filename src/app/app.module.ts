@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ChartModule } from 'angular-highcharts';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+export const routes: Routes = [
+
+]
 
 @NgModule({
-declarations: [
+  declarations: [
   
-    
+ 
 ],
- imports: [
+  imports: [
     BrowserModule,
     FontAwesomeModule,
     ChartModule
 
 
+  
   ],
   providers: [],
 
